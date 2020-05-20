@@ -8,7 +8,7 @@
   },
   "private": true,
   "scripts": {
-    "start": "env NODE_ENV=production webpack-dev-server --open --config webpack.prod.js",
+    "start": "env NODE_ENV=production node ./backend/bin/www",
     "build": "env NODE_ENV=production webpack --config webpack.prod.js",
     "start-client": "env NODE_ENV=development webpack-dev-server --open --config webpack.dev.js --hot",
     "start-backend": "env NODE_ENV=development node ./node_modules/nodemon/bin/nodemon.js ./backend/bin/www",
